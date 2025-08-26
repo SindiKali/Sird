@@ -1,5 +1,5 @@
 #!/bin/bash
-real -p "Digite a URL do site: " url
+read -p "Digite a URL do site: " url
 files = (
     ".env"
     "backup.sql"
