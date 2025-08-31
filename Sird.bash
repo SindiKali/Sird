@@ -1,6 +1,6 @@
 #!/bin/bash
 read -p "Digite a URL do site: " url
-files = (
+files=(
     ".env"
     "backup.sql"
     "config.php"
