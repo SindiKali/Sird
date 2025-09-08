@@ -10,7 +10,7 @@ files=(
 
 for file in "${files[@]}"
 do
-    response=$(curl -s -o /dev/null -w "%{http_code}" "$url/$file")
+    response=$(curl -s -L -o /dev/null -w "%{http_code}" "$url/$file")
 
     if [ "$response" == "200" ]
     then
